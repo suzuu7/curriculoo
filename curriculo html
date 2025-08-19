@@ -1,0 +1,28 @@
+# curriculoo
+curriculo infor
+
+<!DOCTYPE html>
+<html>
+<body>
+  <p><center>
+    <h1>Suzane Pereira Costa</h1>
+    <h3>Brasileira, 15 anos, tec infor</h3>
+    <h5>Fortaleza/CE</h5>
+  </center>
+  </p>
+  <h2>Objetivo</h2>
+   <center><p>Desenvolver soluções de software eficientes que atendam às necessidades da empresa</p></center>
+   <hr>
+  <h2>Formação:</h2>
+   <ol> 
+     <li>Enino Medio</li>
+   </ol>
+  <h2>Cursos e Treinamentos</h2>
+   <ul>
+     <li>Informática Basica</li>
+     <li>HTML</li>
+     <li>lógica de programação</li>
+   </ul>
+  
+</body>
+</html>

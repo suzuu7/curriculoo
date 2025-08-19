@@ -1,2 +1,0 @@
-# curriculoo
-curriculo infor
