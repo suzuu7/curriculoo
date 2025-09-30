@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gays no Topo - Formulário de Cadastro</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🏳️‍🌈 GAYS NO TOPO 🏳️‍🌈</h1>
+        <h2>Formulário de Cadastro - Comunidade LGBTQIA+</h2>
+        <p>Junte-se à nossa comunidade cheia de orgulho, cor e música!</p>
+        <hr>
+    </header>
+
+    <!-- Formulário Principal -->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Seção de Informações Pessoais -->
+        <fieldset>
+            <legend>🌟 Suas Informações Pessoais 🌟</legend>
+            
+            <table cellpadding="8">
+                <tr>
+                    <td><label for="nome">Nome Completo:</label></td>
+                    <td><input type="text" id="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="seu@email.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telefone">Telefone:</label></td>
+                    <td><input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"></td>
+                </tr>
+                <tr>
+                    <td><label for="idade">Idade:</label></td>
+                    <td><input type="number" id="idade" name="idade" min="16" max="100"></td>
+                </tr>
+                <tr>
+                    <td><label for="site">Site/Blog Pessoal:</label></td>
+                    <td><input type="url" id="site" name="site" placeholder="https://www.meusite.com"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Seção de Preferências -->
+        <fieldset>
+            <legend>🎵 Suas Preferências 🎵</legend>
+            
+            <table cellpadding="8">
+                <tr>
+                    <td><label for="diva-favorita">Diva Pop Favorita:</label></td>
+                    <td>
+                        <input type="search" id="diva-favorita" name="diva-favorita" list="divas" placeholder="Pesquise sua diva">
+                        <datalist id="divas">
+                            <option value="Madonna">
+                            <option value="Lady Gaga">
+                            <option value="Beyoncé">
+                            <option value="Britney Spears">
+                            <option value="Cher">
+                            <option value="Rihanna">
+                            <option value="Ariana Grande">
+                            <option value="Taylor Swift">
+                            <option value="Shakira">
+                            <option value="Kylie Minogue">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="musica-hino">Seu Hino Pessoal:</label></td>
+                    <td><input type="search" id="musica-hino" name="musica-hino" placeholder="Pesquise sua música hino"></td>
+                </tr>
+                <tr>
+                    <td><label for="nivel-orgulho">Nível de Orgulho (1-10):</label></td>
+                    <td><input type="number" id="nivel-orgulho" name="nivel-orgulho" min="1" max="10" value="10"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Seção de Upload -->
+        <fieldset>
+            <legend>📸 Suas Fotos e Arquivos 📸</legend>
+            
+            <table cellpadding="8">
+                <tr>
+                    <td><label for="foto-perfil">Foto de Perfil:</label></td>
+                    <td><input type="file" id="foto-perfil" name="foto-perfil" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td><label for="musica-arquivo">Upload de Música:</label></td>
+                    <td><input type="file" id="musica-arquivo" name="musica-arquivo" accept="audio/*"></td>
+                </tr>
+                <tr>
+                    <td><label for="curriculo">Currículo (PDF):</label></td>
+                    <td><input type="file" id="curriculo" name="curriculo" accept=".pdf"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Seção de Contato e Redes Sociais -->
