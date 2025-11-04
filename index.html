@@ -1,176 +1,435 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lady Gaga - Frase Inspiradora</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #ffeb3b 0%, #ff4081 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            padding: 40px;
-            max-width: 800px;
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-        
-        .gaga-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(45deg, #ff4081, #ffeb3b);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        .header h1 {
-            color: #ff4081;
-            font-size: 28px;
-        }
-        
-        .quote-container {
-            text-align: right;
-            padding: 20px;
-            border-right: 5px solid #ff4081;
-            margin-bottom: 30px;
-        }
-        
-        .quote {
-            font-size: 28px;
-            line-height: 1.4;
-            color: #333;
-            margin-bottom: 20px;
-            font-weight: 500;
-            font-style: italic;
-        }
-        
-        .author {
-            font-size: 20px;
-            color: #ff4081;
-            font-weight: bold;
-        }
-        
-        .info-section {
-            background: linear-gradient(to right, rgba(255, 235, 59, 0.2), rgba(255, 64, 129, 0.2));
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-        
-        .info-section h2 {
-            color: #ff4081;
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
-        
-        .info-section p {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-        
-        .decoration {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-        
-        .circle {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            opacity: 0.7;
-        }
-        
-        .yellow {
-            background-color: #ffeb3b;
-        }
-        
-        .pink {
-            background-color: #ff4081;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #777;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 600px) {
-            .quote {
-                font-size: 22px;
-            }
-            
-            .author {
-                font-size: 18px;
-            }
-            
-            .container {
-                padding: 20px;
-            }
-            
-            .header h1 {
-                font-size: 22px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 GAYS DO TOPO</title>
+  <style>
+    /* Estilos gerais */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #ffffb2 0%, #ffe4e6 100%);
+      color: #000;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff69b4, #00ffff, #adff2f, #ffa07a);
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+      animation: pulse 3s infinite alternate;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    @keyframes pulse {
+      0% { filter: brightness(100%); }
+      100% { filter: brightness(130%); }
+    }
+
+    nav {
+      background: linear-gradient(45deg, #ff69b4, #00ffff, #adff2f);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+
+    .menu li {
+      margin: 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 12px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      display: block;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+      border: 2px solid transparent;
+    }
+
+    .menu a:hover {
+      background-color: #ff69b4;
+      color: white;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+      border-color: white;
+    }
+
+    .menu a:active {
+      transform: translateY(-1px);
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    section {
+      background: rgba(255, 250, 250, 0.9);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #ff1493;
+      text-align: center;
+      border-bottom: 2px dashed #ff69b4;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    /* ASIDE MELHORADO - MAIS LARGO NA VERTICAL */
+    aside {
+      background: linear-gradient(135deg, #e0ffff 0%, #ffebf9 100%);
+      border-radius: 20px;
+      padding: 25px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      border: 3px solid #ff69b4;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      animation: float 6s ease-in-out infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 85vh;
+    }
+
+    aside:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+
+    aside::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      height: 10px;
+      background: linear-gradient(90deg, #ff69b4, #00ffff, #adff2f, #ffa07a);
+      z-index: 1;
+    }
+
+    aside h3 {
+      color: #ff1493;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 1.6em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .lady-gaga-quote {
+      font-style: italic;
+      margin: 20px 0;
+      padding: 25px 20px;
+      background: #fff;
+      border-radius: 15px;
+      border-left: 5px solid #ff69b4;
+      border-right: 5px solid #00ffff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+      font-size: 1.2em;
+      line-height: 1.5;
+      transition: all 0.3s ease;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lady-gaga-quote:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .lady-gaga-quote::before {
+      content: "❝";
+      font-size: 50px;
+      color: #ff69b4;
+      position: absolute;
+      top: -15px;
+      left: 15px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .lady-gaga-quote::after {
+      content: "❞";
+      font-size: 50px;
+      color: #00ffff;
+      position: absolute;
+      bottom: -20px;
+      right: 15px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .destaque {
+      background: linear-gradient(45deg, #ff69b4, #00ffff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px dashed #ff69b4;
+    }
+
+    .gaga-icon {
+      font-size: 28px;
+      margin: 0 5px;
+      animation: spin 4s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    footer {
+      background: linear-gradient(90deg, #ff69b4, #00ffff);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+    }
+
+    marquee {
+      margin: 10px 0;
+    }
+
+    img {
+      border-radius: 20px;
+      margin-top: 10px;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .empresa-titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+    }
+
+    .bandeira-lgbt {
+      width: 50px;
+      height: 30px;
+      background: linear-gradient(to bottom, 
+        #ff0018 0%, #ff0018 16.66%,
+        #ffa52c 16.66%, #ffa52c 33.33%,
+        #ffff41 33.33%, #ffff41 50%,
+        #008018 50%, #008018 66.66%,
+        #0000f9 66.66%, #0000f9 83.33%,
+        #86007d 83.33%, #86007d 100%);
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      animation: rainbow 3s infinite alternate;
+    }
+
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    .slogan {
+      font-size: 1.8em;
+      text-align: center;
+      margin: 15px 0;
+      color: #8A2BE2;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .marquee-lgbt {
+      font-size: 1.5em;
+      padding: 10px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .divas-lista {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .divas-lista li {
+      background: linear-gradient(45deg, #ff69b4, #00ffff);
+      border-radius: 20px;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .divas-lista li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .divas-lista a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Layout responsivo */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      aside {
+        width: auto;
+        min-height: auto;
+        order: -1;
+      }
+      
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .menu li {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="gaga-icon">LG</div>
-            <h1>Lady Gaga - Frase Inspiradora</h1>
-        </div>
-        
-        <div class="quote-container">
-            <p class="quote">"Eu prefiro fazer uma música que salve uma pessoa do que fazer uma música que seja um hit. Eu quero mudar o mundo, uma pessoa de cada vez."</p>
-            <p class="author">- Lady Gaga</p>
-        </div>
-        
-        <div class="info-section">
-            <h2>Sobre a Frase</h2>
-            <p>Esta frase reflete a filosofia artística de Lady Gaga, que sempre priorizou a autenticidade e o impacto emocional em sua música.</p>
-            <p>Ela demonstra como a arte pode ser uma força transformadora na vida das pessoas, indo além do sucesso comercial.</p>
-        </div>
-        
-        <div class="decoration">
-            <div class="circle yellow"></div>
-            <div class="circle pink"></div>
-        </div>
-        
-        <div class="footer">
-            <p>Página criada com as cores amarelo e rosa | Frase da Lady Gaga</p>
-        </div>
+
+  <header>
+    <div class="empresa-titulo">
+      <div class="bandeira-lgbt"></div>
+      <h1>GAYS DO TOPO</h1>
+      <div class="bandeira-lgbt"></div>
     </div>
+    <marquee>
+      <h1>🌈 Conheça o mundo LGBT 🎈</h1>
+    </marquee>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="parceiro.html">Parceiros</a></li>
+      <li><a href="curriculoide.html">Currículo</a></li>
+      <li><a href="formulario.html">Formulário</a></li>
+      <li><a href="tabela.html">Tabela</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <section>
+        <p class="slogan">🌟 SEJA LGBT! 🌟</p>
+        <p style="color:#8A2BE2; text-align:center;">✨ Viva com orgulho, amor e autenticidade! 💭</p>
+        <marquee direction="left" scrollamount="8" behavior="scroll" class="marquee-lgbt">
+          🎶 GAY! 🎨 LÉSBICA! 🎮 BISSEXUAL! 📚 PANSEXUAL! 🦄 TRANS! 💜
+        </marquee>
+      </section>
+
+      <section id="sobre">
+        <h2>Quem Somos</h2>
+        <p>Somos uma plataforma que celebra o orgulho LGBT e a cultura pop, com ênfase nas divas pop que sempre foram ícones de resistência, empoderamento e autenticidade. Aqui, temos um espaço para você se expressar, se divertir e celebrar a vida com muito estilo e atitude!</p>
+      </section>
+
+      <section id="orgulho-lgbt">
+        <h2>O Orgulho LGBT</h2>
+        <p>O orgulho LGBT simboliza a luta por direitos iguais, respeito e visibilidade para todas as pessoas, independentemente da sua orientação sexual ou identidade de gênero. Aqui, o orgulho é nossa bandeira!</p>
+        <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LGBT_Rainbow_Flag.svg/640px-LGBT_Rainbow_Flag.svg.png" alt="Bandeira LGBT" width="500"></center>
+      </section>
+
+      <section id="divas-pop">
+        <h2>Divas Pop</h2>
+        <p>Divas pop são ícones da cultura LGBT. Beyoncé, Lady Gaga, Madonna e tantas outras inspiram e empoderam com música e atitude!</p>
+        <ul class="divas-lista">
+          <li><a href="https://www.youtube.com/watch?v=zpzdgmqIHOQ" target="_blank">🎤 Madonna</a></li>
+          <li><a href="https://www.youtube.com/watch?v=vBynw9Isr28" target="_blank">🎤 Lady Gaga</a></li>
+          <li><a href="https://www.youtube.com/watch?v=2vjPBrBU-TM" target="_blank">🎤 Beyoncé</a></li>
+          <li><a href="https://www.youtube.com/watch?v=5GLG1VY-jnI" target="_blank">🎤 Ariana Grande</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- ASIDE MELHORADO - MAIS LARGO NA VERTICAL -->
+    <aside>
+      <div>
+        <h3><span class="gaga-icon">🎤</span> Lady Gaga diz <span class="gaga-icon">💖</span></h3>
+        <div class="lady-gaga-quote">
+          "Eu sou obcecada por amor. Eu acredito no amor. Eu acredito que podemos mudar o mundo através do amor."
+        </div>
+      </div>
+      <p class="destaque">Respeitar o outro é celebrar a diversidade! 🏳️‍🌈</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>💜 Site criado com amor e orgulho 🏳️‍🌈 | © 2025 Gays do Topo</p>
+  </footer>
+
 </body>
 </html>
