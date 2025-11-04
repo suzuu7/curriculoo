@@ -4,54 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🎉 SER GAY É BOM</title>
+    <style>
+        /* Reset e estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ffffb2 0%, #ffe4e6 100%);
+            color: #000;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(90deg, #ff69b4, #00ffff, #adff2f, #ffa07a);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        marquee {
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        /* Seção principal */
+        .hero-section {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-title {
+            font-size: 2.5em;
+            color: #FF1493;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+        
+        /* Tabela colorida */
+        .colorful-table {
+            margin: 30px auto;
+            border-collapse: separate;
+            border-spacing: 10px;
+            border: none;
+        }
+        
+        .colorful-table td {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            font-size: 2em;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .colorful-table td:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        /* Cores das células */
+        .pink { background-color: #FF69B4; }
+        .cyan { background-color: #00FFFF; }
+        .green { background-color: #ADFF2F; }
+        .coral { background-color: #FFA07A; }
+        .teal { background-color: #20B2AA; }
+        .orchid { background-color: #BA55D3; }
+        .gold { background-color: #FFD700; }
+        .tomato { background-color: #FF6347; }
+        
+        /* Mensagem de imaginação */
+        .imagination {
+            font-family: 'Courier New', monospace;
+            font-size: 1.5em;
+            color: #8A2BE2;
+            margin: 25px 0;
+            text-align: center;
+            padding: 15px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Marquee inferior */
+        .marquee-lgbt {
+            font-size: 1.8em;
+            color: #DC143C;
+            padding: 15px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Linha divisória */
+        hr {
+            border: none;
+            height: 5px;
+            background: linear-gradient(90deg, #FF4500, #FF69B4, #00FFFF);
+            margin: 40px 0;
+            border-radius: 5px;
+        }
+        
+        /* Artigo sobre a empresa */
+        article {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .article-header h1 {
+            font-size: 2.5em;
+            color: #FF1493;
+            background: linear-gradient(45deg, #ff69b4, #00ffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            background: rgba(255, 250, 250, 0.9);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: #ff1493;
+            border-bottom: 2px dashed #ff69b4;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 1.8em;
+            }
+            
+            .colorful-table td {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5em;
+            }
+            
+            .marquee-lgbt {
+                font-size: 1.3em;
+            }
+            
+            .article-header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
-<body bgcolor="#FFFFB2" text="#000000">
-
+<body>
     <header>
-        <marquee behavior="alternate" scrollamount="10" direction="right">
+       
             <h1>🌈 sobre o mundo lgbt 🎈</h1>
         </marquee>
     </header>
 
     <main>
-        <section>
-            <center>
-                <font face="Comic Sans MS" size="5" color="#FF1493">
-                    <p>🌟 SEJA LTBT! 🌟</p>
-                </font>
+        <section class="hero-section">
+            <div class="hero-title">
+                🌟 SEJA LGBT! 🌟
+            </div>
+               
 
-                <table border="5" cellpadding="15" bgcolor="#7FFFD4">
-                    <tr>
-                        <td bgcolor="#FF69B4">🍭</td>
-                        <td bgcolor="#00FFFF">🎂</td>
-                        <td bgcolor="#ADFF2F">🎉</td>
-                        <td bgcolor="#FFA07A">🎈</td>
-                    </tr>
-                    <tr>
-                        <td bgcolor="#20B2AA">🐵</td>
-                        <td bgcolor="#BA55D3">🐱</td>
-                        <td bgcolor="#FFD700">🦄</td>
-                        <td bgcolor="#FF6347">🐸</td>
-                    </tr>
-                </table>
+            <div class="imagination">
+                ✨ Use sua imaginação! 💭
+            </div>
 
-                <br>
-
-                <font face="Courier New" size="4" color="#8A2BE2">
-                    <p>✨ Use sua imaginação! 💭</p>
-                </font>
-
+            <div class="marquee-lgbt">
                 <marquee direction="left" scrollamount="8" behavior="scroll">
-                    <font size="6" color="#DC143C">🎶 GAY! 🎨 LESBICA! 🎮 BISSEXUAL! 📚 PANSSEXUAL!</font>
+                    🎶 GAY! 🎨 LÉSBICA! 🎮 BISSEXUAL! 📚 PANSEXUAL!
                 </marquee>
-            </center>
+            </div>
         </section>
 
-        <hr color="#FF4500" size="5">
+        <hr>
 
         <article>
-            <header>
-                <center><h1>Sobre a Gays no Topo</h1></center>
+            <header class="article-header">
+                <h1>Sobre a Gays no Topo</h1>
             </header>
 
             <section>
@@ -71,4 +246,9 @@
 
             <section>
                 <h2>Colaboradores</h2>
-                <p>Nos</p>
+                <p>Nossa equipe é formada por pessoas diversas e apaixonadas pela causa LGBT+. Trabalhamos juntos para criar conteúdo relevante, organizar eventos e promover ações que fortaleçam a comunidade. Acreditamos que a união faz a força e que, juntos, podemos construir um mundo mais colorido, justo e cheio de amor.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
