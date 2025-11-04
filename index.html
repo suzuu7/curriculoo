@@ -1,186 +1,285 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌈 SER GAY É BOM - Gays no Topo</title>
-    <style>
-        /* Reset e estilos gerais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 GAYS DO TOPO</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      background-color: #ffffb2;
+      color: #000;
+      font-family: 'Comic Sans MS', cursive;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: linear-gradient(135deg, #FFFFB2, #FFD1DC, #E0BBE4);
-            color: #333;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-        }
+    header {
+      background: linear-gradient(90deg, #ff69b4, #00ffff, #adff2f, #ffa07a);
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+      animation: pulse 3s infinite alternate;
+    }
 
-        /* Aside fixo à esquerda */
-        aside {
-            position: fixed;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 230px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            padding: 20px;
-            text-align: center;
-            font-style: italic;
-            font-weight: bold;
-            color: #8A2BE2;
-            backdrop-filter: blur(6px);
-        }
+    @keyframes pulse {
+      0% { filter: brightness(100%); }
+      100% { filter: brightness(130%); }
+    }
 
-        aside h3 {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
+    nav {
+      background: linear-gradient(45deg, #ff69b4, #00ffff, #adff2f);
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
 
-        /* Container principal */
-        main {
-            flex: 1;
-            margin-left: 270px; /* Espaço pro aside */
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            padding: 20px;
-        }
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      gap: 8px;
+    }
 
-        /* Header */
-        header {
-            background: linear-gradient(90deg, #FF69B4, #FF1493, #8A2BE2, #00BFFF, #ADFF2F);
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
+    .menu li {
+      margin: 0;
+    }
 
-        .header-marquee {
-            font-size: 2.5em;
-            color: white;
-            text-shadow: 3px 3px 0 #8A2BE2;
-            animation: rainbow 3s infinite alternate;
-        }
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px 18px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      display: block;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+      border: 2px solid transparent;
+    }
 
-        @keyframes rainbow {
-            0% { color: #FF69B4; }
-            25% { color: #FF1493; }
-            50% { color: #8A2BE2; }
-            75% { color: #00BFFF; }
-            100% { color: #ADFF2F; }
-        }
+    .menu a:hover {
+      background-color: #ff69b4;
+      color: white;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+      border-color: white;
+    }
 
-        /* Navigation */
-        nav {
-            background: rgba(255, 255, 255, 0.7);
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 15px;
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+    .menu a:active {
+      transform: translateY(-1px);
+    }
 
-        nav a {
-            text-decoration: none;
-            color: #8A2BE2;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
 
-        nav a:hover {
-            color: #FF1493;
-            transform: scale(1.1);
-        }
+    section {
+      background: #fffafa;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
 
-        /* Seções */
-        section {
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 20px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            text-align: center;
-        }
+    h2 {
+      color: #ff1493;
+      text-align: center;
+      border-bottom: 2px dashed #ff69b4;
+      padding-bottom: 10px;
+    }
 
-        section h2 {
-            color: #8A2BE2;
-            margin-bottom: 15px;
-        }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #555;
-        }
+    td {
+      font-size: 25px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
 
-        /* Responsivo */
-        @media (max-width: 800px) {
-            body {
-                flex-direction: column;
-            }
+    td:hover {
+      transform: scale(1.1);
+    }
 
-            aside {
-                position: relative;
-                transform: none;
-                left: 0;
-                top: 0;
-                margin: 20px auto;
-                width: 90%;
-            }
+    aside {
+      background: #e0ffff;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border: 2px solid #ff69b4;
+    }
 
-            main {
-                margin-left: 0;
-            }
-        }
-    </style>
+    footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+
+    marquee h1 {
+      margin: 0;
+    }
+
+    img {
+      border-radius: 20px;
+      margin-top: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .empresa-titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .bandeira-lgbt {
+      width: 40px;
+      height: 25px;
+      background: linear-gradient(to bottom, 
+        #ff0018 0%, #ff0018 16.66%,
+        #ffa52c 16.66%, #ffa52c 33.33%,
+        #ffff41 33.33%, #ffff41 50%,
+        #008018 50%, #008018 66.66%,
+        #0000f9 66.66%, #0000f9 83.33%,
+        #86007d 83.33%, #86007d 100%);
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      animation: rainbow 3s infinite alternate;
+    }
+
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    .lady-gaga-quote {
+      font-style: italic;
+      margin: 15px 0;
+      padding: 15px;
+      background: #fff;
+      border-radius: 10px;
+      border-left: 4px solid #ff69b4;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .lady-gaga-quote::before {
+      content: "❝";
+      font-size: 30px;
+      color: #ff69b4;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+
+    .lady-gaga-quote::after {
+      content: "❞";
+      font-size: 30px;
+      color: #ff69b4;
+      position: absolute;
+      bottom: -15px;
+      right: 10px;
+    }
+
+    .destaque {
+      background: linear-gradient(45deg, #ff69b4, #00ffff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
+  <header>
+    <div class="empresa-titulo">
+      <div class="bandeira-lgbt"></div>
+      <h1>GAYS DO TOPO</h1>
+      <div class="bandeira-lgbt"></div>
+    </div>
+      <h1>🌈 Conheça o mundo LGBT 🎈</h1>
+    </marquee>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="parceiro.html">Parceiros</a></li>
+      <li><a href="curriculoide.html">Currículo</a></li>
+      <li><a href="formulario.html">Formulário</a></li>
+      <li><a href="tabela.html">Tabela</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <p style="text-align:center; font-size: 24px; color:#FF1493;">🌟 SEJA LGBT! 🌟</p>
+
+      <p style="color:#8A2BE2; text-align:center;">✨ Viva com orgulho, amor e autenticidade! 💭</p>
+
+      <marquee direction="left" scrollamount="8" behavior="scroll">
+        <font size="5" color="#DC143C">🎶 GAY! 🎨 LÉSBICA! 🎮 BISSEXUAL! 📚 PANSEXUAL! 🦄 TRANS! 💜</font>
+      </marquee>
+    </section>
+
     <aside>
-        <h3>✨ Lady Gaga disse:</h3>
-        <p>“Don’t you ever let a soul in the world tell you that you can’t be exactly who you are.” 💫</p>
+      <h3>💖 Lady Gaga diz:</h3>
+      <div class="lady-gaga-quote">
+        "Eu sou obcecada por amor. Eu acredito no amor. Eu acredito que podemos mudar o mundo através do amor."
+      </div>
+      <p class="destaque">Respeitar o outro é celebrar a diversidade! 🏳️‍🌈</p>
     </aside>
 
-    <main>
-        <header>
-            <h1 class="header-marquee">🌈 SER GAY É BOM - Gays no Topo</h1>
-        </header>
+    <section id="sobre">
+      <h2>Quem Somos</h2>
+      <p>Somos uma plataforma que celebra o orgulho LGBT e a cultura pop, com ênfase nas divas pop que sempre foram ícones de resistência, empoderamento e autenticidade. Aqui, temos um espaço para você se expressar, se divertir e celebrar a vida com muito estilo e atitude!</p>
+    </section>
 
-        <nav>
-            <a href="index.html">🏠 Início</a>
-            <a href="historia.html">📜 História</a>
-            <a href="orgulho.html">🏳️‍🌈 Orgulho</a>
-            <a href="contato.html">📩 Contato</a>
-        </nav>
+    <section id="orgulho-lgbt">
+      <h2>O Orgulho LGBT</h2>
+      <p>O orgulho LGBT simboliza a luta por direitos iguais, respeito e visibilidade para todas as pessoas, independentemente da sua orientação sexual ou identidade de gênero. Aqui, o orgulho é nossa bandeira!</p>
+      <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LGBT_Rainbow_Flag.svg/640px-LGBT_Rainbow_Flag.svg.png" alt="Bandeira LGBT" width="500"></center>
+    </section>
 
-        <section>
-            <h2>Quem Somos 🏳️‍🌈</h2>
-            <p>Somos um espaço de amor, aceitação e representatividade. Celebramos a diversidade e lutamos pelo respeito de todas as formas de amar e existir!</p>
-        </section>
+    <section id="divas-pop">
+      <h2>Divas Pop</h2>
+      <p>Divas pop são ícones da cultura LGBT. Beyoncé, Lady Gaga, Madonna e tantas outras inspiram e empoderam com música e atitude!</p>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=zpzdgmqIHOQ" target="_blank">🎤 Madonna</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vBynw9Isr28" target="_blank">🎤 Lady Gaga</a></li>
+      </ul>
+    </section>
+  </main>
 
-        <section>
-            <h2>Movimento LGBTQIA+</h2>
-            <p>O movimento é uma força global por igualdade e direitos humanos. Cada cor da bandeira representa amor, coragem e resistência.</p>
-        </section>
-
-        <section>
-            <h2>História e Cultura</h2>
-            <p>De Stonewall a paradas cheias de glitter e orgulho, a história LGBTQIA+ é marcada por luta, arte e conquistas que mudaram o mundo!</p>
-        </section>
-
-        <footer>
-            <p>🌈 Feito com amor e glitter 💖 | © 2025 Gays no Topo</p>
-        </footer>
-    </main>
+  <footer>
+    <p>💜 Site criado com amor e orgulho 🏳️‍🌈 | © 2025 Gays do Topo</p>
+  </footer>
 
 </body>
 </html>
-
